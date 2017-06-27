@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/head_javascript.js"></script>
+    <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js"></script>
+    <title>Timezones and the Calendar</title>
+  </head>
+
+  <body>
+
+    <h1>Timezones and the Calendar</h1>
+    
+    <p>The date and time of a calendar event is automatically adjusted to reflect the timezone of the user who is looking at the calendar event.  In other words, when an instructor sets a date and time for a calendar event, that date and time will display in the timezone used by each student.</p>
+    <p>This document illustrates how Engage handles differences between timezones when displaying calendar events.</p>
+    <p><strong>Note:</strong> The calendar displays times using a 24 hour clock commonly referred to as "military time." For example, 10:00 PM is displayed as 22:00.</p>
+    
+    
+    
+    <ol class="procedure">
+      
+      <li>
+        <p>Assume an instructor creates an event on the course calendar for January 15th at 10:00 PM.  If the instructor's timezone in their user profile is set to America/Chicago, then the time for that event is January 15th at 10:00 PM in Central time.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_01.png" alt="General section of the create calendar event page where the instructor has set a date of January 15 at 22:00"></div>
+      </li>
+      
+      <li>
+        <p>Any students who have the America/Chicago timezone set in their user profile will also see this event reported on January 15 at 10:00 PM.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_02.png" alt="View calendar event page as seen by a student who uses America/Chicago timezone. Time displayed is 10:00 PM."></div>
+      </li>
+      
+      <li>
+        <p>However, students who have a timezone that is different from the instructor's will see the calendar event displayed in their local timezone.</p>
+        <p>For example, this student's timezone is set to America/New_York, which is Eastern time.  Therefore, the event displays on January 15 at 11:00 PM.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_03.png" alt="View calendar event page as seen by a student who uses America/New_York timezone.  Time displayed is 11:00 PM."></div>
+      </li>
+      
+      <li>
+        <p>Similarly, a student who uses America/Los_Angeles as their timezone will see the event listed at 8:00 PM on January 15.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_04.png" alt="View calendar event page as seen by a student who uses America/Los_Angeles timezone.  Time displayed is 8:00 PM."></div>
+      </li>
+      
+      <li>
+        <p>The below image depicts how to change your user timezone.  Click <strong>Edit Profile</strong> from the dropdown menu that appears when you click your profile icon in the global navigation menu.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_05.png" alt="Edit Profile selection highlighted in the user profile dropdown menu"></div>
+      </li>
+      
+      <li>
+        <p>In the <strong>General</strong> section of your user profile, you will find the <strong>timezone</strong> dropdown. Choose your timezone from this menu.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_06.png" alt="Timezone dropdown menu highlighted in the General section of the Edit Profile page"></div>
+      </li>
+      
+      <li>
+        <p><strong>Note:</strong> Instructors who use the Edit Due Dates form should be aware that it establishes a due date of 11:55 PM of the selected date <strong>in the school's timezone.</strong>  For more information, instructors can refer to <a href="faculty.calendar.edit_due_dates.html">Edit Due Dates</a>.</p>
+        <div class="maxwidth"><img src="images/studentfaculty.calendar.timezones_and_the_calendar_07.png" alt="Edit Due Dates selection highlighted for an instructor under Course Administration in the Administration block"></div>
+      </li>
+      
+    </ol>
+    
+    
+    
+    <script type="text/javascript">
+      postRenderFunctions();
+    </script>
+  </body>
+</html>
