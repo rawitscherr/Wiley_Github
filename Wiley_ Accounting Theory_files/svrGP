@@ -1,0 +1,6 @@
+function GetElqContentPersonalizationValue(strDataField){ var strTemp = '';        if(strDataField == 'Topic1' || strDataField == 'Topic1'){strTemp = 'AC';}
+        if(strDataField == 'Topic_Code1' || strDataField == 'Topic_Code1'){strTemp = 'ACXF|CFA Exam Review:ACXC|CIA Exam Review:AC30|Corporate Finance and Accounting:AC61|CPA Practice:AC65|GAAP:ACIF|IFRS:ACXP|Public Accounting and Consulting:AC70|Taxation:ACXL|Lasser Newsletter';}
+        if(strDataField == 'Eloqua_Form_Name1' || strDataField == 'Eloqua_Form_Name1'){strTemp = 'GlobalPreferenceCenter-Accounting';}
+        if(strDataField == 'Eloqua_Form_Fields1' || strDataField == 'Eloqua_Form_Fields1'){strTemp = 'Accounting_1,Accounting_2,Accounting_3,Accounting_4,Accounting_5,Accounting_6,Accounting_7,Accounting_8,Accounting_9';}
+        if(strDataField == 'Global_Preference_Lookup_ID1' || strDataField == 'Global_Preference_Lookup_ID1'){strTemp = 'AC_Accounting_Subjectcode1';}
+	return strTemp; } if (this.SetElqContent){ SetElqContent(); }
