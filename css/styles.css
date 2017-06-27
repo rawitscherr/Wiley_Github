@@ -1,0 +1,162 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  max-width: 100%;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+h1 {
+  font-family: Cambria, serif;
+  color: #365F91;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+h2 {
+  /* Display inline-block rather than default block so that anchors do not take up full screen width. */
+  display: inline-block;
+  font-family: Cambria, serif;
+  color: #365F91;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-family: Cambria, serif;
+  color: #000000;
+  font-size: 1.17em;
+}
+
+p {
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #1B75BC;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #999;
+  -moz-box-shadow: 1px 1px 2px 1px #CCC;
+  -webkit-box-shadow: 1px 1px 2px 1px #CCC;
+  box-shadow: 1px 1px 2px 1px #CCC;
+}
+
+table, th, td {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: solid;
+  border-color: black;
+  border-collapse: collapse;
+  border-width: 1px;
+}
+
+th {
+  padding: 0.5em;
+  text-align: center;
+}
+
+td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+
+
+.screencast {
+  /* Class used by div for embedded Kaltura video player */
+  /* text-align:center; */ /* Removed */
+  padding-bottom: 0.5em;
+}
+
+.warning {
+  /* Class used by span that wraps text preceded by Warning! */
+  /* Add styling here if you ever want to change how the text wrapped by the span looks */
+  display: inline;
+}
+
+.warning:before {
+  /* Define the Warning! text that precedes what is inside the span */
+  content: "Warning! ";
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.maxwidth {
+  /* Class used by div that wraps img tags to prevent images from exceeding this specified size */
+  /* Note that the max-width of 100% in the img tag ensures images are still responsive */
+  max-width: 1000px;
+  height: auto;
+}
+
+
+
+ol.procedure {
+  list-style-type: none;
+  list-style-type: decimal !ie; /*IE 7- hack*/
+  margin: 0;
+  margin-top: 0.8em;
+  margin-left: 2.3em; /* distance from the left border of the <li> number. */
+  padding: 0;
+  counter-reset: li-counter;
+}
+
+ol.procedure > li {
+  position: relative;
+  margin-bottom: 2em; /* whitespace distance between steps. */
+  padding-top: 0.5em; /* greyspace distance inside the step. */
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  background-color: #f5f5f5; /* color of the box containing the <li> content.  f0f0f1 is darker used by forum posts, f5f5f5 is lighter and used by Engage home */
+}
+
+ol.procedure > li > p {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+}
+
+ol.procedure > li:before {
+  position: absolute;
+  top: 0;
+  left: -1.5em;
+  width: 1.5em; /* width of the <li> number box. */
+  height: 1.5em; /* height of the <li> number box */
+  font-size: 1.5em; /* size of the <li> number. */
+  line-height: 1.5em; /* Make this the same as height to ensure vertical center alignment */
+  text-align: center;
+  color: #f5f5f5;
+  background-color: #464646;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+}
+
+ol.procedure .list_item_anchor {
+  position: absolute;
+  top: 0;
+  left: -1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  background-color: transparent;
+}
+
+
+
+ol.callout {
+  list-style-type: lower-alpha;
+}
