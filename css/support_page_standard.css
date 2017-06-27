@@ -1,0 +1,104 @@
+/* Force jQuery tabs and accordions to have font used by Engage theme */
+.ui-widget-content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+/* Force padding on list items inside each ACCORDION. */
+
+#accordion_students div ul li {
+  padding-bottom: 8px;
+}
+
+#accordion_faculty div ul li {
+  padding-bottom: 8px;
+}
+
+#accordion_georgetown_msf div ul li {
+  padding-bottom: 8px;
+}
+
+/* And now for some partner-specific TABS (not accordions) */
+#adobe_connect_esync li {
+  padding-bottom: 8px;
+}
+
+#adobe_connect_remotelearner li {
+  padding-bottom: 8px;
+}
+
+#adobe_connect_georgetown li {
+  padding-bottom: 8px;
+}
+
+
+
+/* Adobe Connect custom TABS embed a few videos.  Make them in a row if device width can fit them. */
+/* Note that video_item width should match the width found in the Kaltura embed. */
+.video_container {
+  display: block;
+  width: 100%;
+}
+
+.video_item {
+  display: inline-block;
+  width: 500px;
+  padding: 0px 8px 8px 0px;
+}
+
+
+
+/* Jquery gives the <h3> tags in each accordion too much vertical padding. */
+/* The default padding values in jquery-ui.css are .5em .5em .5em .7em. */
+/* The left value was increased to fix the text's relation to the "expand" icon -- the text is pushed too far left when top and bottom padding are adjusted. */
+.ui-accordion .ui-accordion-header {
+  padding: .1em .5em .1em 2em;
+}
+
+
+
+/* <h4> is too large by default (20px).  It dwarfs the <h3> used by the jquery accordion.  Reduce it. */
+h4 {
+  font-size: 18px;
+}
+
+
+
+/* FACULTYDEV THEME ACCOMODATIONS */
+
+/* Facultydev site theme makes <h3> sections of the accordion too big. Reduce it. Defaults:
+body.facdevcoursestyle div[role=main] h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0.66665em;
+}
+*/
+body.facdevcoursestyle div[role=main] h3 {
+  font-weight: normal;
+  font-size: 1.17em;
+  margin-bottom: 0.2em;
+}
+
+/* Because we decreased <h3>, we also need to decrease <h4>. Defaults:
+body.facdevcoursestyle div[role=main] h4 {
+  font-size: 1.25em;
+  margin-bottom: 0.8em;
+}
+*/
+body.facdevcoursestyle div[role=main] h4 {
+  font-weight: normal;
+  font-size: 1.0em;
+  margin-bottom: 0.8em;
+}
+
+/* The theme also has too much vertical whitespace surrounding <p> tags.  Reduce it.  Defaults:
+body.facdevcoursestyle div[role=main] p {
+    margin: auto auto 1.5em;
+}
+*/
+body.facdevcoursestyle div[role=main] p {
+    margin: auto auto 1.0em;
+}
